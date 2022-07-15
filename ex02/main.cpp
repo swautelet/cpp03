@@ -1,4 +1,5 @@
 #include "ScavTrap.hpp"
+#include "FragTrap.hpp"
 
 int main()
 {
@@ -6,6 +7,7 @@ int main()
 	std::string s2("Newbie");
 	ClapTrap paul(s1);
 	ScavTrap newbie(s2);
+	FragTrap lol("Solo");
 
 	paul.attack(s2);
 	newbie.takeDamage(0);
@@ -27,5 +29,7 @@ int main()
 	paul.berepaired(1);
 	paul.displaystats();
 	newbie.displaystats();
+	lol.displaystats();
+	lol.highFivesGuys();
 	newbie.guardGate();
 }
