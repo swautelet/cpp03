@@ -1,4 +1,4 @@
-SRC = ClapTrap.cpp main.cpp ScavTrap.cpp FragTrap.cpp DiamonTrap.cpp
+SRC = ClapTrap.cpp main.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 NAME = claptrap
 CPPFLAGS = -Werror -Wextra -Wall -std=c++98
 OBJ=$(SRC:%.cpp=%.o)
@@ -6,7 +6,7 @@ OBJ=$(SRC:%.cpp=%.o)
 all : $(NAME)
 
 $(NAME) : $(OBJ)
-	g++ $(CPPFLAGS) $(SRC) -o $(NAME)
+	g++ $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 .o:.cpp
 	g++ -c $(CPPFLAGS) $? 
