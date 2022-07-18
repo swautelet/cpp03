@@ -23,6 +23,7 @@ ClapTrap& ClapTrap::operator =(const ClapTrap& copi)
 	this->_ep = copi._ep;
 	this->_hp = copi._hp;
 	this->_attack = copi._attack;
+	return (*this);
 }
 
 ClapTrap::~ClapTrap(void)
@@ -75,7 +76,7 @@ void	ClapTrap::berepaired(unsigned int amount)
 	{
 		if (this->_ep > 0)
 		{
-			std::cout << "ClapTrap " << this->_name << " reapair itself for " << amount << " damage!" << std::endl;
+			std::cout << "ClapTrap " << this->_name << " repair itself for " << amount << " damage!" << std::endl;
 			this->_ep--;
 			this->_hp += amount;
 		}

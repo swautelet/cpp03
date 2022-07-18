@@ -1,13 +1,16 @@
-#ifndef DIAMONTRAP_HPP
-# define DIAMONTRAP_HPP
+#ifndef DIAMONDTRAP_HPP
+# define DIAMONDTRAP_HPP
 
 # include "ScavTrap.hpp"
 # include "FragTrap.hpp"
 
-class DiamonTrap:public ScavTrap, public FragTrap{
+class DiamondTrap:public ScavTrap, public FragTrap{
 	public:
-		DiamonTrap(std::string name);
-		~DiamonTrap();
+		DiamondTrap();
+		DiamondTrap(std::string name);
+		DiamondTrap(const DiamondTrap& copi);
+		DiamondTrap& operator =(const DiamondTrap& copi);
+		~DiamondTrap();
 		void whoAmI();
 
 	private:

@@ -9,7 +9,7 @@ int main()
 	// ClapTrap paul(s1);
 	// ScavTrap newbie(s2);
 	// FragTrap lol("Solo");
-	DiamonTrap test("Jacque");
+	DiamondTrap test("Jacque");
 	// paul.attack(s2);
 	// newbie.takeDamage(0);
 	// newbie.berepaired(10);
