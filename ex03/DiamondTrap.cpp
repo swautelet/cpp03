@@ -40,3 +40,8 @@ DiamondTrap::~DiamondTrap()
 {
 	std::cout << this->_name << " is destroyed, the ClapTrap community cry his death!" << std::endl;
 }
+
+void	DiamondTrap::whoAmI()
+{
+	std::cout << "I am " << this->_name << " born from the ClapTrap named " << ClapTrap::_name << " and his evolutions!" << std::endl;
+}

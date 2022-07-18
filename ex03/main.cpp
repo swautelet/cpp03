@@ -10,6 +10,7 @@ int main()
 	// ScavTrap newbie(s2);
 	// FragTrap lol("Solo");
 	DiamondTrap test("Jacque");
+	test.whoAmI();
 	// paul.attack(s2);
 	// newbie.takeDamage(0);
 	// newbie.berepaired(10);
