@@ -1,10 +1,28 @@
 #include"ClapTrap.hpp"
 
+ClapTrap::ClapTrap(void): _name("default"), _hp(10), _ep(10), _attack(0)
+{
+	std::cout << "default ClapTrap constructor called!" << std::endl;
+	return ;
+}
 
 ClapTrap::ClapTrap(std::string name): _name(name), _hp(10), _ep(10), _attack(0)
 {
 	std::cout << "ClapTrap " << this->_name << " created." << std::endl;
 	return ;
+}
+
+ClapTrap::ClapTrap(const ClapTrap& copi): _name(copi._name), _hp(copi._hp), _ep(copi._ep), _attack(copi._attack)
+{
+
+}
+
+ClapTrap& ClapTrap::operator =(const ClapTrap& copi)
+{
+	this->_name = copi._name;
+	this->_ep = copi._ep;
+	this->_hp = copi._hp;
+	this->_attack = copi._attack;
 }
 
 ClapTrap::~ClapTrap(void)
