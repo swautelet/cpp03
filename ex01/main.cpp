@@ -20,7 +20,7 @@ int main()
 	newbie.berepaired(1);
 	newbie.berepaired(1);
 	newbie.berepaired(1);
-	newbie.attack(s1);
+	newbie.attack();
 	paul.takeDamage(20);
 	paul.attack(s2);
 	paul.takeDamage(1);

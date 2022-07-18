@@ -46,3 +46,8 @@ void	ScavTrap::guardGate()
 {
 	std::cout << this->_name << " pased in mode Gate keeper." << std::endl;
 }
+
+void	ScavTrap::attack()
+{
+	std::cout << "ScavTrap " << this->_name << " attack everything around him for " << this->_attack << " damage!" << std::endl;
+}

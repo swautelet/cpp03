@@ -11,6 +11,7 @@ int main()
 	// FragTrap lol("Solo");
 	DiamondTrap test("Jacque");
 	test.whoAmI();
+	test.attack();
 	// paul.attack(s2);
 	// newbie.takeDamage(0);
 	// newbie.berepaired(10);

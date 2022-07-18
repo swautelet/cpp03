@@ -11,6 +11,7 @@ class ScavTrap : public ClapTrap
 	ScavTrap(const ScavTrap& copi);
 	ScavTrap& operator =(const ScavTrap& copi);
 	~ScavTrap();
+	void	attack();
 	void	guardGate();
 
 	private:
